@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="vente.css">
+</head>
+<body>
+    <header>
+        <div class="titre">resever votre glace dés maintenat</div>
+    </header>
+    <div class="container">
+        <form action="vente.php" method="get">
+        <div class="items" id="parfum">
+            <div class="tit">choissisez vous parfurm</div>
+            <input type="checkbox" name="parfume[]" id="fr" value="fraise">
+            <label for="fr">fraise</label><br>
+            <input type="checkbox" name="parfume[]" id="ch" value="chocolat">
+            <label for="ch">chocolat</label><br>
+            <input type="checkbox" name="parfume[]" id="vn" value="vanille">
+            <label for="vn">vanille</label><br>
+        </div>
+        <div class="items" id="cornets">
+        <div class="tit">choisir votre cornet</div>
+            <input type="radio" name="couvert[]" value="pot" id="pot">
+            <label for="pot">pot</label><br><br>
+            <input type="radio" name="couvert[]" value="cornet" id="cornet">
+            <label for="cornet">cornet</label><br>
+        </div>
+        <div class="items" id="sup">
+        <div class="tit">choisir votre supplement</div>
+            <input type="checkbox" name="supl[]" value="ch" id="s_ch">
+            <label for="s_ch">pepite de chocolat</label><br><br>
+            <input type="checkbox" name="supl[]" value="chan" id="s_chan">
+            <label for="s_chan">chantilly</label><br>
+        </div>
+        <center>
+            <div class="btn">
+                <input type="submit" value="commander">
+            </div>
+        </center>
+        </form>
+        <a href="/tarif_vente.php" class="tarif">tarif</a>
+    </div>
+</body>
+</html>
